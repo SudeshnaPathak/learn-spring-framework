@@ -41,5 +41,11 @@ public class SpringBeanVsJavaBean {
         // Pojo - Plain Old Java Object
         Pojo pojo = new Pojo();
         System.out.println(pojo);
+
+        // Java Bean
+        JavaBean javaBean = new JavaBean();
+        javaBean.setText("Hello");
+        javaBean.setNumber(10);
+        System.out.println(javaBean.getText() + " : " + javaBean.getNumber());
     }
 }
