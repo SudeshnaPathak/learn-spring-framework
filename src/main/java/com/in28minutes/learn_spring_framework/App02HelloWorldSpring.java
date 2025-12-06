@@ -5,7 +5,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App02HelloWorldSpring {
     public static void main(String[] args)
     {
-        // JVM -> Spring Context (Container) -> Spring Bean
+        // JVM -> Spring Context (IOC Container) -> Spring Bean
+        // IOC - Inversion of Control Container : Bean Factory or Application Context to manage the Beans
         //1. Launch a Spring Context
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class);
 
