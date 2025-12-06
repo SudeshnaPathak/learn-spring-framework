@@ -38,12 +38,14 @@ public class HelloWorldConfiguration {
 
     @Bean
     public Person person2MethodCall(){
+        //Auto wiring using Method Calls
         return new Person(name() , age() , address());
     }
 
     @Bean
     public Person person3Parameters(String name, int age, Address address3){
         // Creating Bean using existing Beans as Parameters
+        // Auto wiring using Parameters
         return new Person(name , age , address3);
     }
 }
