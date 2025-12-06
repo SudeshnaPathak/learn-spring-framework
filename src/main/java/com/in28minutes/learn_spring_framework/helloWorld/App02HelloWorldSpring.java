@@ -8,7 +8,7 @@ public class App02HelloWorldSpring {
     public static void main(String[] args)
     {
         // JVM -> Spring Context (IOC Container) -> Spring Bean
-        // IOC - Inversion of Control Container : Bean Factory or Application Context to manage the Beans
+        // IOC - Inversion of Control : Bean Factory or Application Context to manage the Beans and their lifecycle
         //1. Launch a Spring Context
         try(AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(HelloWorldConfiguration.class))
         {
